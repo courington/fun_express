@@ -1,0 +1,11 @@
+{
+  "name": "express_api",
+  "version": "0.1.0",
+  "description": "NODE.JS AND EXPRESS REST API",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "~3.4.8"
+  }
+}
