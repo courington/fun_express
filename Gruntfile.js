@@ -2,20 +2,15 @@ module.exports = function(grunt) {
 	// project configuration
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
-		clean: {
-
-		},
-		jshint: {
-
-		},
-		watch: {
-
-		},
 	});
 
-	grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-watch');
+	// Load Grunt plugins.
+  grunt.loadTasks('build');
 
-	grunt.registerTask('default', []);
-}
+  // grunt.loadNpmTasks('grunt-contrib-jshint');
+
+  // Tasks.
+  grunt.registerTask('dev', ['jshint']);
+
+	grunt.registerTask('default', ['dev']);
+};
