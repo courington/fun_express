@@ -47,7 +47,7 @@ app.get('/category/:id', function(req, res) {
 });
 
 app.post('/category', function(req, res) {
-	if(!req.body.hasOwnProperty('name') || 
+	if(!req.body.hasOwnProperty('name') ||
      !req.body.hasOwnProperty('cost')) {
     res.statusCode = 400;
     return res.send('Error 400: Post syntax incorrect.');
