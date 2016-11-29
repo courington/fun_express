@@ -8,10 +8,10 @@ var db = require('../queries');
 //   res.render('index', { title: 'Express' });
 // });
 
-router.get('/api/puppies', db.getAllPuppies);
-router.get('/api/puppies/:id', db.getSinglePuppy);
-router.post('/api/puppies', db.createPuppy);
-router.put('/api/puppies/:id', db.updatePuppy);
-router.delete('/api/puppies/:id', db.removePuppy);
+router.get('/api/v1/budgets', db.getAllBudgets);
+router.get('/api/v1/budgets/:id', db.getOneBudget);
+router.post('/api/v1/budgets', db.createBudget);
+router.put('/api/v1/budgets/:id', db.updateBudget);
+router.delete('/api/v1/budgets/:id', db.removeBudget);
 
 module.exports = router;
